@@ -72,7 +72,7 @@ public class Client extends JFrame {
 
     public void ConnectClient(String nickname) {
         try {
-            clientSocket = new Socket(/*Your IP here*/ "127.0.0.1" /* Localhost Adress */, 444);
+            clientSocket = new Socket(/*Your IP here*/ "127.0.0.1" /* Localhost Adress */, /* Your port here */);
             inputStream = new DataInputStream(clientSocket.getInputStream());
             outputStream = new DataOutputStream(clientSocket.getOutputStream());
             connected = true;
